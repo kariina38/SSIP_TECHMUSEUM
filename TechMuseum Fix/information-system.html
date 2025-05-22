@@ -1,0 +1,360 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Information System Project</title>
+    <link rel="icon" href="media/logo.png" type="image/x-icon" />
+    <!-- FONTS AND OTHERS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR SECTION START -->
+    <div class="menu-bar">
+      <a href="#" class="logo"><img src="media/logo.png" /></a>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php">About</a></li>
+        <li>
+          <a href="#">Project <i class="fas fa-caret-down"></i></a>
+
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="informatics.html">Informatics</a></li>
+              <li><a href="information-system.html">Information System</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- NAVBAR SECTION FINISH -->
+
+    <!-- PROJECT SECTION -->
+    <div class="title-is">
+      <h1>Information System Projects</h1>
+    </div>
+    <div class="project-is">
+      <!-- Card 1 -->
+    <div class="article-card">
+      <div class="content">
+        <a href="projectIS1.html">
+        <p class="type">Application</p>
+        <p class="title">Application for PUMA IS</p>
+      </div>
+      <img src="media/projectIS1.png" alt="Project 1" />
+    </div>
+    <!-- Card 2 -->
+    <div class="article-card">
+      <div class="content">
+        <a href="projectIS2.html">
+        <p class="type">Website</p>
+        <p class="title">Harmoni rasa Bandung</p>
+      </div>
+      <img src="media/Harmoni Bandung mini.png" alt="Project 2" />
+    </div>
+    <!-- Card 3 -->
+    <div class="article-card">
+      <div class="content">
+        <a href="projectIS3.html">
+        <p class="type">Website</p>
+        <p class="title">Jewlery and Gift</p>
+      </div>
+      <img src="media/jewelque.jpg" alt="Project 3" />
+    </div>
+    </div>
+    <div class="button-container">
+      <a href="submission.php" class="more-project-button">Add My Project</a>
+    </div>
+  </body>
+  <!-- PROJECT SECTION FINISH -->
+
+  <!-- FOOTER SECTION START -->
+  <footer>
+    <div class="footer-container">
+      <!-- Social Media Links -->
+      <div class="row social-links">
+        <a href="https://wa.me/6283835361971" target="_blank"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/informatics_presuniv?igsh=NWVsdnN4dmpkZm5k"
+          target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="row navigation-links">
+        <ul>
+          <li>
+            <a href="https://wa.me/6283835361971" target="_blank">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Copyright Info -->
+      <div class="row copyright">
+        Tech Museum Copyright © 2024 All rights reserved
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER SECTION FINISH -->
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR SECTION START */
+  .menu-bar .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu-bar {
+    background-color: white;
+    box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+  }
+
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+  }
+
+  .menu-bar ul li a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .menu-bar ul li a:hover {
+    color: #7d94c5;
+  }
+
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    background-color: white;
+    box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.27);
+  }
+
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .dropdown-menu-1 {
+    display: none;
+  }
+
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: black;
+  }
+  /* NAVBAR SECTION FINISH */
+
+  /* PROJECT IS START */
+  .title-is h1 {
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    font-size: 2.5rem;
+  }
+
+  .project-is {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment if needed */
+    gap: 30px;
+    padding: 50px 0;
+  }
+
+  .article-card {
+    width: 330px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+  }
+
+  .article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .article-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article-card .content {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    color: white;
+  }
+
+  .article-card .type,
+.article-card .title {
+  margin: 0;
+}
+
+.article-card .type {
+  font-size: 12px;
+  color: rgb(239, 239, 239);
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.article-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+  /* "More Project" Button */
+  .button-container {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .more-project-button {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #99a9d3;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .more-project-button:hover {
+    background-color: #bdaf95;
+  }
+  /* PROJECT IS FINISH */
+
+  /* FOOTER SECTION START */
+  footer {
+    position: static;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .footer-container {
+    color: gray;
+    text-align: center;
+  }
+
+  .footer-container .row {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-container .row a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s ease;
+  }
+
+  .footer-container .row a:hover {
+    color: #7181ad;
+  }
+
+  .footer-container .row ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-container .row ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .footer-container .social-links a i {
+    font-size: 2em;
+    margin: 0 10px;
+  }
+
+  .footer-container .copyright {
+    font-size: 0.8em;
+    color: gray;
+  }
+  /* FOOTER SECTION FINISH */
+</style>
